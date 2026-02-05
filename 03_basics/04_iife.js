@@ -34,3 +34,42 @@
 // ✔ Each function call gets its own separate context
 // 3. Eval Execution Context -
 // ✔ Created when code is executed inside an eval() function
+
+//  example->
+// let val1=10
+// let val2=5
+// function addNum(num1,num2){
+//     let total=num1+num2;
+//     return total;
+// }
+// let result1=addNum(val1,val2);
+// let result2=addNum(20,30);
+
+// step 1--> global execution (this)
+// step 2--> memory phase -----> in this way values are assigned in memory phase
+// val1->undefined
+// val2->undefined
+// addNum->definition
+// result1->undefined
+// result2->undefined
+// step 3--> execution phase
+// val1->10
+// val2->5
+// addNum-> new box is created (new variable environment+execution thread)
+// result1->15 (after function return)
+// result2->50  (after function return)
+// now again memory and execution phase will form for function addNum everytime when function is called
+// first call-> memory phase
+// num1->undefined
+// num2->undefined
+// total->undefined
+// second call-> execution phase
+// num1->10
+// num2->5
+// total->15
+// return 15 -> to global execution context
+//  and now this block will be delete from memory
+// now again function is called with different values for result2 same process will repeat
+
+
+// if there are nested function calls then the execution contexts will form a stack called call stack and follow lifo( last in first out) method
