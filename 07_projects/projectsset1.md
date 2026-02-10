@@ -1,4 +1,4 @@
-# Projects related to DOM
+<!-- # Projects related to DOM
 
 ## project link
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
@@ -29,7 +29,7 @@ buttons.forEach(function (button) {
     if (e.target.id === 'yellow') {
       body.style.backgroundColor = e.target.id;
     }
-    
+
   });
 });
 
@@ -191,15 +191,15 @@ window.addEventListener('keydown', (e) => {
     <table>
     <tr>
       <th>Key</th>
-      <th>Keycode</th> 
+      <th>Keycode</th>
       <th>Code</th>
     </tr>
     <tr>
       <td>${e.key === ' ' ? 'Space' : e.key}</td>
-      <td>${e.keyCode}</td> 
+      <td>${e.keyCode}</td>
       <td>${e.code}</td>
     </tr>
-    
+
   </table>
     </div>
   `;
@@ -242,4 +242,4 @@ document.querySelector('#start').addEventListener('click', startChangingColor);
 document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
 
-```
+``` -->

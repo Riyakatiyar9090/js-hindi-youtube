@@ -1,7 +1,7 @@
 const coding = ["js", "ruby", "java", "python", "cpp"];
 
 // coding.forEach( function (val){
-// function-> it is callback function that'swhy it is not having any name b/c it is called by forEach method internally
+// function-> it is callback function that's why it is not having any name b/c it is called by forEach method internally
 //  val-> name given to each element of array while iterating
 //     console.log(val);
 // } )
